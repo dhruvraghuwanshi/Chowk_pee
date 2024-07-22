@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+  scroll-behavior: smooth;
+}
+
+.background{
+    background-image: url("./assets/springdale-roofers-about_orig.jpg");
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.heading{
+    font-family: "Playfair Display", serif;
+}
+
+.circle{
+    top: 20%;
+    right: 34%;
+    width: 33vw;
+    height: 33vw;
+}
+
+.heading2{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.img{
+    width: 36vw;
+}
+
+.gray{
+    height: 120vh;
+}
+
+.card{
+    width: 25vw;
+    height: 78vh;
+}
+
+.cards{
+    box-shadow: 0 0 200px rgba(0,0,0,10) inset;
+    transition: all .4s;
+}
+
+.card1{
+    background-image: url('./assets/forklift.jpeg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.card2{
+    background-image: url('./assets/worker.jpg');
+    background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.card3{
+    background-image: url('./assets/movers.png');
+    background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.card4{
+    background-image: url('./assets/builder.jpeg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.card5{
+    background-image: url('./assets/waiter.jpeg');
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+.card6{
+    background-image: url('./assets/cleaning.jpg');
+    background-position: 40%;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.card *:hover{
+    cursor: pointer;
+}
+
+.cards:hover{
+    box-shadow: 0 0 200px rgba(0,0,0,0) inset;
+    transition: all .4s;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.cards .heading{
+  transition: all 0.4s;
+}
+
+.cards:hover .heading{
+  transform: scale(0.85);
+  transition: all 0.4s;
+}
+
+.contact{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/contact.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo{
+    width: 20vw;
+  }
+
+  .navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links{
+    display: none;
+  }
+  .background{
+    width: 100vw;
+    height: 90vw;
+  }
+  .circle{
+    top: 18%;
+    left: 17%;
+    width: 70vw;
+    height: 70vw;
+  }
+  .heading{
+    width: 40vw;
+    line-height: 110%;
+    font-size: 5vw;
+  }
+  .text{
+    font-size: 4vw;
+    width: 50vw;
+    line-height: 5vw;
+  }
+  .aboutheading{
+    margin-bottom: 5vw;
+    display: flex;
+    width: 75%;
+  }
+  .aboutsec{
+    margin-top: 15vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw;
+  }
+  .font2{
+    margin-top: 0;
+    line-height: 140%;
+    font-size: 3vw;
+    padding-bottom: 10vw;
+  }
+  .blue-image{
+    width: 100%;
+    height: 30vw;
+  }
+  .heading3{
+    width: 100vw;
+    top: 35%;
+    left: 2%;
+    padding-left: 0;
+  }
+  #Workers{
+    display: none;
+  }
+  .workforce{ 
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .img{
+    width: 80vw;
+  }
+  .workforce2{
+    height: max-content;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .hire{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
+  .hire2{
+    display: flex;
+    flex-direction: column-reverse;
+    height: max-content;
+  }
+  .gray{
+    height: max-content;
+  }
+  .grids{
+    grid-template-columns: auto;
+    gap: 10vw;
+  }
+  .card{
+    margin: 0;
+    padding: 0;
+    height: min-content;
+    width: 100%;
+  }
+  .cards{
+    height: 40vw;
+    width: 80vw;
+  }
+  .overtext{
+    margin: 0;
+    padding: 0;
+    top: 40%;
+    left: 25%;
+  }
+  .contact{
+    justify-content: space-between;
+    height: max-content;
+    padding-bottom: 0;
+  }
+  .contactheading{
+    font-size: 7vw;
+  }
+  .contactcard{
+    margin-bottom: 0;
+    width: 100%;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    gap: 3vw;
+  }
+  .heading4{
+    font-size: 5vw;
+  }
+  .font6{
+    font-size: 3vw;
+  }
+  .linkedin{
+    width: 5vw;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin: 4vw;
+    width: 100vw;
+    margin-bottom: 0;
+  }
+  .copyright{
+    text-align: center;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .background{
+    height: 50vw;
+  }
+  .heading{
+    width: 26vw;
+    line-height: 110%;
+    font-size: 2.5vw;
+  }
+  .text{
+    margin-top: 2vw;
+    font-size: 1.5vw;
+    width: 30vw;
+    line-height: 2.3vw; 
+  }
+  .aboutheadingtext{
+    font-size: 3vw;
+  }
+  .aboutsec img{
+    width: 40vw;
+  }
+  .grids{
+    height: max-content;
+  }
+  
+}
